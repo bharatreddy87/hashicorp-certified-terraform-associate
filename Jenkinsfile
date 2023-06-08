@@ -6,7 +6,9 @@ stage('Branch Validation') {
             steps {
                 script {
                    echo "test branch"
+                   sleep 300
                 }
             }
+}
 
 }
