@@ -1,14 +1,10 @@
 pipeline {
-
-agent { label 'test1' }
-
-stage('Branch Validation') {
+    agent { label 'test1' }
+    stages {
+        stage('build') {
             steps {
-                script {
-                   echo "test branch"
-                   sleep 300
-                }
+                sh 'sleep 300'
             }
-}
-
+        }
+    }
 }
